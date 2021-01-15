@@ -30,13 +30,13 @@
 </template>
 
 <script>
-import Rocher from "@/components/Rocher";
-import DiscountCatalog from "@/components/DiscountCatalog";
-import TommyHil from "@/components/TommyHil";
-import SpecialOffers from "@/components/SpecialOffers";
-import DodoOther from "@/components/DodoOther";
-import PandoraOther from "@/components/PandoraOther";
-import SamsungOther from "@/components/SamsungOther";
+import Rocher from "@/components/Coupons/components/Rocher";
+import DiscountCatalog from "@/components/Coupons/components/DiscountCatalog";
+import TommyHil from "@/components/Coupons/components/TommyHil";
+import SpecialOffers from "@/components/Coupons/components/SpecialOffers";
+import DodoOther from "@/components/Coupons/components/DodoOther";
+import PandoraOther from "@/components/Coupons/components/PandoraOther";
+import SamsungOther from "@/components/Coupons/components/SamsungOther";
 export default {
   name: 'Coupons',
   components: {
@@ -44,19 +44,29 @@ export default {
     PandoraOther, DodoOther, SpecialOffers, TommyHil, DiscountCatalog, Rocher},
 }
 </script>
-<style scoped lang="scss">
+<style>
+/*body{*/
+/*  background: #F2F2F2 !important;*/
 
-//#id{
-//    background: #F2F2F2;
-//}
+/*}*/
+</style>
+
+<style scoped lang="scss">
 
 p,h1,h2,h3{
   padding: 0;
   margin: 0;
 }
+body{
+  //background: #F2F2F2;
+}
+.coupons{
+  //background: #F2F2F2;
+}
 
 .coupons_main{
-  height: 2080px;
+  width: 1920px;
+  height: 1680px;
   margin-top: 50px;
   display: flex;
   //background: #F2F2F2;
@@ -67,6 +77,9 @@ p,h1,h2,h3{
 }
 .coupons_column2{
   margin-right: 21px;
+}
+.coupons_column3{
+  margin-right: 40px;
 }
 
 .title_name h1{
